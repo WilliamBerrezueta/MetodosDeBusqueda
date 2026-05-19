@@ -52,7 +52,6 @@ public class BusquedaBinaria {
     //     return -1;
 
     // }
-    // ORDENAR POR EDAD
     public void ordenar(Persona[] personas) {
 
         for (int j = 0; j < personas.length - 1; j++) {
@@ -69,7 +68,6 @@ public class BusquedaBinaria {
         }
     }
 
-    // MOSTRAR EDADES
     public void mostrar(Persona[] personas, int bajo, int alto) {
 
         for (int i = bajo; i <= alto; i++) {
@@ -79,7 +77,6 @@ public class BusquedaBinaria {
         System.out.println();
     }
 
-    // BUSQUEDA BINARIA
     public Persona buscar(Persona[] personas, int edadBuscar) {
 
         int bajo = 0;
@@ -93,12 +90,7 @@ public class BusquedaBinaria {
 
             int valorCentro = personas[centro].getEdad();
 
-            System.out.print(
-                    "bajo=" + bajo +
-                    " alto=" + alto +
-                    " centro=" + centro +
-                    " valorCentro=" + valorCentro
-            );
+            System.out.print("bajo=" + bajo + " alto=" + alto + " centro=" + centro  + " valorCentro=" + valorCentro);
 
             if (valorCentro == edadBuscar) {
 

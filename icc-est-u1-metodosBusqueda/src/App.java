@@ -70,12 +70,7 @@ public static void main(String[] args) {
 
             if (encontrada != null) {
 
-                System.out.println(
-                        "La persona con la edad "
-                        + edadBuscar +
-                        " es "
-                        + encontrada.getNombre()
-                );
+                System.out.println("La persona con la edad " + edadBuscar + " es " + encontrada.getNombre());
 
             } else {
 
